@@ -1,7 +1,6 @@
-/**
- * Read and implement all of the TODO items in the main method, below.
- * 
- */
+import edu.fcps.karel2.Robot;
+import edu.fcps.karel2.Display;
+
 public class TestChallenge3 {
 	// TODO Complete the BeepFarmer class, provided, by implementing the reap() method
 
