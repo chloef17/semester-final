@@ -12,9 +12,11 @@ public class TestChallenge2 {
 		// TODO Have the horse explode()
        Display.openWorld("maps/pasture.map");
        Display.setSize(15, 15);
-       Display.setSpeed(10);
        
        Horse lily = new Horse(9,3);
+       
+       lily.wander(36, 7);
+		 lily.explode();
 
 	}
 

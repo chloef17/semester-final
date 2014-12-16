@@ -4,33 +4,34 @@ import edu.fcps.karel2.Display;
 
 /**
  * Represents a horse wandering around aimlessly in a pasture
- *
+ *@ChloeFink
+ *@16.12.14
  */
 public class Horse extends Wanderer {
 
-   public Horse() 
-      {
-     super(1, 1, Display.NORTH, Display.INFINITY);
+	public Horse()
+  {
+     super(1, 1);
   }
-   public Horse(int x, int y)
-      { 
-         super(x, y, Display.NORTH, Display.INFINITY);
-         }	
-
-	/**
-	 * Wander around in random directions until a specified number of steps have been taken.
-	 * At regular intervals specified by timer, drop a beeper.
-	 * 
-	 * @param count		the total number of steps to take
-	 * @param timer		the interval at which to drop a beeper
-	 * 
-	 * Ex. horse.wander(13, 4) should drop a beeper every four steps until thirteen steps are taken
-	 */
+   public Horse(int c, int t)
+  {
+     super(c, t);
+  }
+  
 	public void wander(int count, int timer) {
    
-   while(count < 13){
-     wander(4);
-     putBeeper();
+      int k = 1;
+      int numTimes = count/ timer;
+      
+      for (int j = 1; j <= numTimes; j++) 
+      {
+		   while (k <= timer && k <= count) 
+     {
+      wander();
+      k++;
+     }
+      putBeeper();
+      k = 1;
      }
 	}
 }

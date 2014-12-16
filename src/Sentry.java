@@ -4,7 +4,8 @@ import edu.fcps.karel2.Display;
 
 /**
  * Patrols an area defined by four beepers.
- * 
+ * @Chloe Fink
+ *16.12.14
  */
 public class Sentry extends Uberbot {
 
